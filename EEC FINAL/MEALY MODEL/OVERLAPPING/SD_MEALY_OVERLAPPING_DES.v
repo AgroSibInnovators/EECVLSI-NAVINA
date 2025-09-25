@@ -37,7 +37,7 @@ module seq_detector_mealy (
 
             S3: begin
                 if (in) begin
-                    detected   = 1;   // ✅ Detect sequence "1011" here
+                    detected   = 1;   //  Detect sequence "1011" here
                     next_state = S1;  // overlap allowed (reuse trailing '1')
                 end else begin
                     next_state = S2;
@@ -61,3 +61,4 @@ module seq_detector_mealy (
         prs_st = state;
     end
 endmodule
+
